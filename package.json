@@ -1,0 +1,32 @@
+{
+  "name": "@biotope/build-plugin-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "start": "tsc -p tsconfig.json --watch",
+    "build": "tsc -p tsconfig.json",
+    "test": "jest --passWithNoTests",
+    "release": "np --no-yarn"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^3.1.0",
+    "deepmerge": "^4.0.0",
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.4",
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.5",
+    "jest": "^24.9.0",
+    "np": "^5.1.0",
+    "typescript": "^3.6.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
